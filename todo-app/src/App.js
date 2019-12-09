@@ -13,12 +13,19 @@ class App extends React.Component {
     this.setState({todos: x});
   }
 
+  deleter = (id) => {
+    let todo = this.state.todos.filter(todo => {
+      return todo.id !== id
+    });
+    this.setState({todos: todo})
+  };
+
   render () {
     return (
       <div className="App">
         <p>Sup</p>
         <AddTodo add={this.add}/>
-        <Todo todos={this.state.todos} />
+        <Todo todos={this.state.todos} deleter={this.deleter}/>
       </div>
     );
   }
