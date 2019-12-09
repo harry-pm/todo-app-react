@@ -4,8 +4,8 @@ function Todo ({todos}) {
     
     const todoList = todos.length ? (todos.map(list => {
             return (
-                <div className="todo" key={todos.id}>
-                   <p>{list}</p>
+                <div className="todo" key={list.id}>
+                   <p>{list.todo}</p>
                 </div>
                 )
             })

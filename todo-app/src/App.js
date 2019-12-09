@@ -8,11 +8,16 @@ class App extends React.Component {
     todos: []
   }
 
+  add = (todo) => {
+    let x = [...this.state.todos, todo];
+    this.setState({todos: x});
+  }
+
   render () {
     return (
       <div className="App">
         <p>Sup</p>
-        <AddTodo />
+        <AddTodo add={this.add}/>
         <Todo todos={this.state.todos} />
       </div>
     );
