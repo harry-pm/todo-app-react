@@ -1,4 +1,5 @@
 import React from 'react';
+import './addTodo.css'
 
 class AddTodo extends React.Component{
 
@@ -21,7 +22,7 @@ class AddTodo extends React.Component{
             <div className="addTodo">
                 <form onSubmit={this.handleSubmit} >
                     <input type="text" onChange={this.handleChange} placeholder="enter todo" value={this.state.todo}></input>
-                    <button>Add</button>
+                    <button className="add">Add</button>
                 </form>
             </div>
         )

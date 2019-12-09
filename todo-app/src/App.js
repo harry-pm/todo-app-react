@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import AddTodo from './containers/addTodo'
 import Todo from './containers/Todos'
+import Navbar from './containers/navbar'
 
 class App extends React.Component {
   state = {
@@ -23,7 +24,8 @@ class App extends React.Component {
   render () {
     return (
       <div className="App">
-        <p>Sup</p>
+        <Navbar />
+        <h2>Get it done man!</h2>
         <AddTodo add={this.add}/>
         <Todo todos={this.state.todos} deleter={this.deleter}/>
       </div>

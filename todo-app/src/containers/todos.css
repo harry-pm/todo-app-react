@@ -1,0 +1,21 @@
+.todos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: solid black 1px;
+    text-align: left;
+}
+
+li {
+    font-size: 20px;
+}
+
+.delete {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(255, 220, 220);
+}

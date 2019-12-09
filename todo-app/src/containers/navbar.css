@@ -1,0 +1,13 @@
+nav {
+    margin-bottom: 70px;
+    background-color: rgb(80, 192, 127);
+}
+
+.routes {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-around;
+}

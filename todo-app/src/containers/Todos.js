@@ -1,4 +1,5 @@
 import React from 'react';
+import './todos.css';
 
 function Todo (props) {
     const todos = props.todos;
@@ -6,8 +7,10 @@ function Todo (props) {
     const todoList = todos.length ? (todos.map(list => {
             return (
                 <div className="todos" key={list.id}>
-                   <p>{list.todo}</p>
-                   <button onClick={() => {deleter(list.id)}} >Delete</button>
+                  <ul>  
+                    <li>{list.todo}</li>
+                    <button onClick={() => {deleter(list.id) }} className="delete">Delete</button>
+                  </ul> 
                 </div>
                 )
             })

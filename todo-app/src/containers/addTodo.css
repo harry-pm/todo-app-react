@@ -1,0 +1,15 @@
+input {
+    border: solid black 1px;
+    border-radius: 3px;
+    padding: 10px;
+    width: 200px;
+}
+
+.add {
+    border: solid black 1px;
+    border-radius: 3px;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    background-color: rgb(255, 221, 157);
+}
