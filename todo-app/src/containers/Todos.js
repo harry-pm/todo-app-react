@@ -4,7 +4,7 @@ function Todo ({todos}) {
     
     const todoList = todos.length ? (todos.map(list => {
             return (
-                <div className="todo" key={list.id}>
+                <div className="todos" key={list.id}>
                    <p>{list.todo}</p>
                 </div>
                 )
